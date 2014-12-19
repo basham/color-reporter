@@ -7,7 +7,7 @@ var jade = require('gulp-jade');
 var locals = {};
 
 gulp.task('build', ['clean'], function() {
-  var css = fs.readFileSync('./src/styles/student.css', 'utf8');
+  var css = fs.readFileSync('./src/fixtures/student.css', 'utf8');
   var output = colorguard.inspect(css);
   locals.pageTitle = 'student.css';
   locals.audit = output;
