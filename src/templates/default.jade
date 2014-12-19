@@ -1,0 +1,11 @@
+doctype html
+html(lang="en")
+  head
+    title= pageTitle
+  body
+    h1= audit.stats.total
+    ul
+      each count, color in audit.stats.counts
+        li
+          strong= color
+          span= count

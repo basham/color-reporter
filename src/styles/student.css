@@ -1,0 +1,373 @@
+#branding-bar {
+  background: #212121 url(../images/bg-bar.gif) repeat-x 0 100%;
+  color: #fff;
+  min-height: 46px;
+  overflow: hidden;
+  text-align: right;
+}
+#branding-bar a {
+  color: #fff;
+}
+#branding-bar ul {
+  list-style: none;
+}
+
+/*** Bar ***/
+
+#branding-bar .bar {
+  border-top: 6px solid #990000;
+}
+
+/*** Trident Tab & Campus Name ***/
+
+#branding-bar .campus {
+  font-family: "BentonSansCondensedRegular", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 1em; /* 16px (16/16) */
+  left: auto;
+  letter-spacing: 0.025em;
+  line-height: 1em; /* 16px (16/16) */
+  position: absolute;
+  text-align: left;
+  text-transform: uppercase;
+  top: 6px;
+  z-index: 400;
+}
+#branding-bar .campus a {
+  display: table-cell;
+  height: 40px;
+  padding: 0 0 0 45px;
+  text-decoration: none;
+  vertical-align: middle;
+  font-size:1.2em
+}
+#branding-bar .campus a:hover {
+  text-decoration: none;
+}
+#branding-bar .campus img {
+  height: auto;
+  left: -15px;
+  position: absolute;
+  top: -6px;
+  width: 50px;
+}
+/* Wrapper */
+.wrapper {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.user-details{
+  text-decoration: none;
+  margin-top:10px;
+  font-size:1.2em
+}
+
+/*****************page content *****************************/
+
+.tab-content{
+  padding:10px;
+  min-height:800px;
+  background-color: #fbfbf8;
+
+}
+
+
+/*******************Advisor Card ****************************/
+
+.advisor-card {
+  background-color: #fff;
+  margin-bottom: 1em;
+  padding: 1em;
+  -webkit-box-shadow: 0 0 0 1px #eeebdc;
+  -moz-box-shadow: 0 0 0 1px #eeebdc;
+  box-shadow: 0 0 0 1px #eeebdc;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.upcoming-apts-view{
+
+}
+
+/*******************Calendar css ****************************/
+
+.month-navigator{
+  font-size:1.0em;
+  text-align:center;
+  background-color: #C59217;
+  color: white;
+}
+
+.week-month-display-header{
+  cursor:pointer;
+  border: 1px solid #7D110C;
+  text-align:center;
+  background: #9ADCC6;
+  border: 1px solid #fbeed5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+
+}
+
+.days-display{
+  cursor:pointer;
+  text-align:center;
+  background: #ffffff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.calendar-table tbody td{
+  border: 1px solid #9ADCC6;
+
+}
+
+.day:hover{
+  background-color:#D00031;
+  color:#ffffff;
+  text-shadow: 0px 0px 0px #2a2a2a;
+}
+
+.weekday{
+  text-align:center;
+}
+
+.day-expired {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+.hasSlot{
+  float: left;
+  display:inline-block;
+  white-space: nowrap;
+  vertical-align: baseline;
+  width: 0.3em;
+  height: 0.3em;
+  background-color:#4A3C31;
+}
+
+.selected{
+  color:white !important;
+  background:#6dafbf;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+/***************Slot view*************/
+
+.slot-display-table thead{
+  font-size:1.0em;
+  text-align:center;
+  background-color: #EEEBDC; background-image: -webkit-gradient(linear, left top, left bottom, from(#EEEBDC), to(#E8EEDD));
+  background-image: -webkit-linear-gradient(top, #EEEBDC, #E8EEDD);
+  background-image: -moz-linear-gradient(top, #EEEBDC, #E8EEDD);
+  background-image: -ms-linear-gradient(top, #EEEBDC, #E8EEDD);
+  background-image: -o-linear-gradient(top, #EEEBDC, #E8EEDD);
+  background-image: linear-gradient(to bottom, #EEEBDC, #E8EEDD);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#EEEBDC, endColorstr=#E8EEDD);
+  color: #8e8d84;
+}
+
+.walk-in-slot{
+  font-size:12px;
+  font-weight:bold;
+  cursor:default;
+  color:#4B306A;
+  background: #ffffff;
+}
+
+.slot{
+  font-size:12px;
+  font-weight:bold;
+  cursor:pointer;
+  color:#4B306A;
+  background: #ffffff;
+}
+
+.slot:hover{
+  background-color:#D00031;
+  color:#ffffff;
+  text-shadow: 0px 0px 0px #2a2a2a;
+}
+
+/*************upcoming appointments ********************/
+
+.header-text{
+  font-size:15px;
+  font-weight:bold;
+  color: #8e8d84;
+  text-align:center;
+  background-color: #EEEBDD; background-image: -webkit-gradient(linear, left top, left bottom, from(#EEEBDD), to(#DBD4B3));
+  background-image: -webkit-linear-gradient(top, #EEEBDD, #DBD4B3);
+  background-image: -moz-linear-gradient(top, #EEEBDD, #DBD4B3);
+  background-image: -ms-linear-gradient(top, #EEEBDD, #DBD4B3);
+  background-image: -o-linear-gradient(top, #EEEBDD, #DBD4B3);
+  background-image: linear-gradient(to bottom, #EEEBDD, #DBD4B3);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#EEEBDD, endColorstr=#DBD4B3);
+  text-shadow: 0px 1px 0 #fff;
+}
+.upcoming-apt-holder{
+  background-color: #fff;
+  margin-bottom: 1em;
+  padding: 1em;
+  -webkit-box-shadow: 0 0 0 1px #eeebdc;
+  -moz-box-shadow: 0 0 0 1px #eeebdc;
+  box-shadow: 0 0 0 1px #eeebdc;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.assigned-advisor-view{
+  background-color: #fff;
+  margin-bottom: 1em;
+  padding: 1em;
+  -webkit-box-shadow: 0 0 0 1px #eeebdc;
+  -moz-box-shadow: 0 0 0 1px #eeebdc;
+  box-shadow: 0 0 0 1px #eeebdc;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.appointment{
+  background-color: #fff;
+  margin-bottom: 1em;
+  padding: 1em;
+  -webkit-box-shadow: 0 0 0 1px #eeebdc;
+  -moz-box-shadow: 0 0 0 1px #eeebdc;
+  box-shadow: 0 0 0 1px #eeebdc;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+.advisor-detail{
+  display:block;
+  color: #44697D;
+  line-height: 16px;
+  margin-bottom:2px;
+  font: 14px/1.231 "Helvetica",Arial,sans-serif;
+}
+
+.appointment-detail{
+  display:block;
+  color: gray;
+  line-height: 16px;
+  margin-bottom:2px;
+  font: 13px/1.231 "Helvetica",Arial,sans-serif;
+}
+
+.advisor-name{
+  color: #A79E70;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.appointment-card{
+  padding-left:10px
+}
+
+.appointment-btn{
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #6f679d), color-stop(100%, #4d486d));
+  background-image: -webkit-linear-gradient(#6f679d,#4d486d);
+  background-image: -moz-linear-gradient(#6f679d,#4d486d);
+  background-image: -o-linear-gradient(#6f679d,#4d486d);
+  background-image: linear-gradient(#6f679d,#4d486d);
+  -webkit-box-shadow: inset 0 0 0 1px #37344e,inset 0 1px 0 1px #7d76a6;
+  -moz-box-shadow: inset 0 0 0 1px #37344e,inset 0 1px 0 1px #7d76a6;
+  box-shadow: inset 0 0 0 1px #37344e,inset 0 1px 0 1px #7d76a6;
+  background-color: #4d486d;
+  color: #fff;
+  text-shadow: 0 -1px #2c2a3f;
+  border:1px solid #7d99ca;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font-size:12px;
+  font-family:arial, helvetica, sans-serif;
+  padding: 7px;
+}
+
+.control-label{
+  font-weight:bold;
+  font-size:1.4em;
+  display: inline;
+  color: #8e8d84;
+  margin-right: 4%;
+}
+
+#search-panel{
+  margin-right:2%;
+  margin-left:2%;
+}
+
+.search-box{
+  background-color: #fff;
+  margin-bottom: 1em;
+  padding: 1em;
+  -webkit-box-shadow: 0 0 0 1px #eeebdc;
+  -moz-box-shadow: 0 0 0 1px #eeebdc;
+  box-shadow: 0 0 0 1px #eeebdc;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+}
+
+.nav-tabs {
+  border-bottom:5px solid #eeebdc;
+}
+
+.nav-tabs > li {
+  margin-bottom: -5px
+}
+
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover {
+  color: #555555;
+  cursor: default;
+  background-color: #ffffff;
+  border:none;
+  border-bottom: 5px solid #6f679d;
+}
+
+ul,ol{
+  padding-left:42% !important;
+  font-size:17px;
+  font-weight:bold
+}
+
+.nav > li > a:hover{
+  cursor:pointer;
+  background-color:none !important;
+  border-bottom: 4px solid #B5B1CD;
+}
+
+#search-panel .header-text{
+  padding:0.4em;
+  font-weight:bold;
+  color: #8e8d84;
+
+}
+
+.schedule-appointment-btn{
+  border:1px solid #990024; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;font-size:12px;font-family:arial, helvetica, sans-serif; padding: 5px 5px 5px 5px; text-decoration:none; display:inline-block;text-shadow: -1px -1px 0 rgba(0,0,0,0.3);font-weight:bold; color: #FFFFFF;
+  background-color: #D10031; background-image: -webkit-gradient(linear, left top, left bottom, from(#D10031), to(#FF0F47));
+  background-image: -webkit-linear-gradient(top, #D10031, #FF0F47);
+  background-image: -moz-linear-gradient(top, #D10031, #FF0F47);
+  background-image: -ms-linear-gradient(top, #D10031, #FF0F47);
+  background-image: -o-linear-gradient(top, #D10031, #FF0F47);
+  background-image: linear-gradient(to bottom, #D10031, #FF0F47);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#D10031, endColorstr=#FF0F47);}
+
+  .schedule-appointment-btn:hover{
+    border:1px solid #6b0019;
+    background-color: #D13800; background-image: -webkit-gradient(linear, left top, left bottom, from(#D13800), to(#FF4D76));
+    background-image: -webkit-linear-gradient(top, #D13800, #FF4D76);
+    background-image: -moz-linear-gradient(top, #D13800, #FF4D76);
+    background-image: -ms-linear-gradient(top, #D13800, #FF4D76);
+    background-image: -o-linear-gradient(top, #D13800, #FF4D76);
+    background-image: linear-gradient(to bottom, #D13800, #FF4D76);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#D13800, endColorstr=#FF4D76);
+  }
+
+  
