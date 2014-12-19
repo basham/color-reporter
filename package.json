@@ -26,6 +26,7 @@
     "gulp-jade": "^0.10.0",
     "gulp-less": "^2.0.1",
     "gulp-rename": "^1.2.0",
+    "lodash": "^2.4.1",
     "normalize.css": "^3.0.2",
     "require-directory": "^2.0.0"
   }

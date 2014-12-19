@@ -3,10 +3,13 @@ html(lang="en")
   head
     title= pageTitle
     link(href='bundle.css', rel='stylesheet', type='text/css')
-  body
-    h1= audit.stats.total
-    ul
-      each count, color in audit.stats.counts
-        li
-          strong= color
-          span= count
+  body.Body
+    h1 Audit for 
+      code= pageTitle
+    h2 #{audit.stats.total} colors used
+    ul.List
+      each color in colorsByCount
+        li.Color
+          span.Color-block(style="background-color:#{color.value}")
+          strong.Color-value= color.value
+          span.Color-count= color.count
