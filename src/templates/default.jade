@@ -6,6 +6,15 @@ html(lang="en")
   body.Body
     h1 Audit for 
       code= pageTitle
+    h2 #{audit.collisions.length} collisions
+    each collision in audit.collisions
+      h3 Distance of #{Math.round(collision.distance * 100) / 100}
+      ul.List
+        each color in collision.colors
+          li.Color
+            span.Color-block(style="background-color:#{color.rgb}")
+            strong.Color-value= color.rgb
+            span.Color-count= color.lines.length
     h2 #{audit.stats.total} colors used
     ul.List
       each color in colorsByCount
@@ -13,3 +22,4 @@ html(lang="en")
           span.Color-block(style="background-color:#{color.value}")
           strong.Color-value= color.value
           span.Color-count= color.count
+    
