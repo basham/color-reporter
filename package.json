@@ -1,0 +1,19 @@
+{
+  "name": "color-reporter",
+  "version": "1.0.0",
+  "description": "Analyze and generate HTML reports based on CSS color usage.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/basham/color-reporter.git"
+  },
+  "author": "Chris Basham <chris@bash.am>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/basham/color-reporter/issues"
+  },
+  "homepage": "https://github.com/basham/color-reporter"
+}
